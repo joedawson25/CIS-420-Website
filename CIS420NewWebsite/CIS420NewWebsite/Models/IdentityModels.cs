@@ -25,6 +25,9 @@ namespace CIS420NewWebsite.Models
         {
         }
 
+        public DbSet<Member>Members { get; set; }
+        public DbSet<Donor>Donors { get; set; }
+        public DbSet<Administrator> Administrators { get; set; }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
