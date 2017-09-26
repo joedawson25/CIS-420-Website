@@ -22,13 +22,22 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Donate", "Index", "Donor")</li>
+                    <li>@Html.ActionLink("Events", "", "")</li>
+                    <li>@Html.ActionLink("About Us", "", "")</li>
+                    <li>@Html.ActionLink("History", "", "")</li>
+                    <li>@Html.ActionLink("News", "", "")</li>
+                    <li>@Html.ActionLink("Documents", "", "")</li>
+                    <li>@Html.ActionLink("Race Info", "", "")</li>
+
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
+
+    
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -40,5 +49,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
 </body>
 </html>

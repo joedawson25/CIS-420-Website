@@ -59,6 +59,7 @@ html {
 
 body {
   margin: 0;
+  width: 100%;
 }
 
 a:focus {
@@ -6005,6 +6006,7 @@ body.modal-open,
 
 .carousel {
   position: relative;
+  width:100%;
 }
 
 .carousel-inner {
@@ -6018,6 +6020,7 @@ body.modal-open,
   display: none;
   -webkit-transition: 0.6s ease-in-out left;
           transition: 0.6s ease-in-out left;
+          width:100%;
 }
 
 .carousel-inner > .item > img,
@@ -6026,6 +6029,8 @@ body.modal-open,
   height: auto;
   max-width: 100%;
   line-height: 1;
+  margin: 0 auto;
+  width: 100%
 }
 
 .carousel-inner > .active,
@@ -6036,6 +6041,7 @@ body.modal-open,
 
 .carousel-inner > .active {
   left: 0;
+  width:100%
 }
 
 .carousel-inner > .next,
