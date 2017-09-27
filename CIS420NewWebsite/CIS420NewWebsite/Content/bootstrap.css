@@ -281,6 +281,8 @@ th {
 
     img {
         max-width: 100% !important;
+        object-fit: contain;
+
     }
 
     p,
