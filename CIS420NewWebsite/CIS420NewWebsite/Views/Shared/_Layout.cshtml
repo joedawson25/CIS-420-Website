@@ -9,7 +9,9 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" style="height: 50px;">
+        
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,8 +21,8 @@
                 </button>
                 @Html.ActionLink("KHBPA", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+            <div class="navbar-collapse collapse" style="font-size:17px; ">
+                <ul class="nav navbar-nav" >
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Donate", "Index", "Donor")</li>
                     <li>@Html.ActionLink("Events", "", "")</li>
@@ -29,6 +31,10 @@
                     <li>@Html.ActionLink("News", "", "")</li>
                     <li>@Html.ActionLink("Documents", "", "")</li>
                     <li>@Html.ActionLink("Race Info", "", "")</li>
+                    <li class="invisible" style="width:70px;">@Html.ActionLink("Race Info", "", "")</li>
+
+                    <li><img src="~/Content/Images/khbpalogo.png" style="height:50px; " /></li>
+
 
                 </ul>
                 @Html.Partial("_LoginPartial")

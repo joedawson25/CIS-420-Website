@@ -248,6 +248,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\IMG_1540.JPG" />
     <Content Include="Content\Images\IMG_1571.JPG" />
+    <Content Include="Content\Images\khbpalogo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
