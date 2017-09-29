@@ -30,5 +30,21 @@ namespace CIS420NewWebsite.Controllers
         {
             return View();
         }
+        public ActionResult History()
+        {
+            return View();
+        }
+        public ActionResult News()
+        {
+            return View();
+        }
+        public ActionResult Documents()
+        {
+            return View();
+        }
+        public ActionResult RaceInfo()
+        {
+            return View();
+        }
     }
 }
