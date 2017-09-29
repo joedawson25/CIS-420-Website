@@ -13,7 +13,10 @@ namespace CIS420NewWebsite.Controllers
     public class DonorController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-
+        public ActionResult Donors()
+        {
+            return View();
+        }
         // GET: Donor
         public ActionResult Index()
         {

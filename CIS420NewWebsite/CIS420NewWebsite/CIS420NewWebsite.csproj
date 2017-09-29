@@ -246,8 +246,11 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\horse_racing-17.jpg" />
     <Content Include="Content\Images\IMG_1540.JPG" />
     <Content Include="Content\Images\IMG_1571.JPG" />
+    <Content Include="Content\Images\Kentucky Derby 2.jpg" />
+    <Content Include="Content\Images\kentuckyderby-hero7.jpg" />
     <Content Include="Content\Images\khbpalogo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -324,6 +327,7 @@
     <Content Include="Views\Donor\Details.cshtml" />
     <Content Include="Views\Donor\Edit.cshtml" />
     <Content Include="Views\Donor\Index.cshtml" />
+    <Content Include="Views\Home\Events.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
