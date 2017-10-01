@@ -22,3 +22,12 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*em = font size; 1em = one font size*/
+td{
+    padding-right: 1em;
+}
+
+table{
+    margin-bottom: 1em;
+}
