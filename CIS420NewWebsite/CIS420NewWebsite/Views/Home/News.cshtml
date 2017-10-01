@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<CIS420NewWebsite.Models.Article>
 @{
     ViewBag.Title = "News";
 
@@ -6,3 +6,14 @@
 
 <h2>News</h2>
 
+<ul>
+    @foreach (var article in Model)
+    {
+        <li>
+            <a target="_blank" href="@article.Link">
+                @article.Title<br />
+                @article.PublicationDate<br />
+            </a>
+        </li>
+    }
+</ul>
