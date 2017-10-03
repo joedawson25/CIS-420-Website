@@ -47,51 +47,53 @@
     <div style="text-align:center">
         @RenderBody()
         <hr />
-        <footer>
-            <h3>Contact</h3>
-            <a target="_blank" href="https://goo.gl/maps/xBqGKXK2fju">
-                <address>
-                    Kentucky HBPA<br />
-                    3729 S. Fourth St.<br />
-                    Louisville, KY 40214-1712
-                </address>
-            </a>
-            <table>
-                <tbody>
-                    <tr>
-                        <!--TR: Table Row Open Tag-->
-                        <td>Email</td>
-                        <td><a href="mailto:Kentuckyhbpa@gmail.com">Kentuckyhbpa@gmail.com</a></td> <!--TD: Table Cell -->
-                    </tr><!--Close Tag-->
-                    <tr>
-                        <!--New Row-->
-                        <td>Phone</td>
-                        <td>
-                            <a href="tel:+15023631077">502-363-1077</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Toll-Free</td>
-                        <td>
-                            <a href="tel:+18009284272">800-928-4272</a><!--a = anchor or "link"-->
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>Fax</td>
-                        <td>
-                            <a href="tel:+15023676800">502-367-6800</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>This office is open year-round, Monday - Friday from 8:30am to 4:00pm</p>
-
-
-
-            <p>&copy; @DateTime.Now.Year - KHBPA</p>
-        </footer>
+        
     </div>
+    <footer style="text-align: center">
+        <h3>Contact</h3>
+        <a target="_blank" href="https://goo.gl/maps/xBqGKXK2fju">
+            <address>
+                Kentucky HBPA<br />
+                3729 S. Fourth St.<br />
+                Louisville, KY 40214-1712
+            </address>
+        </a>
+        <div style="cent"></div>
+        <table>
+            <tbody>
+                <tr>
+                    <!--TR: Table Row Open Tag-->
+                    <td>Email</td>
+                    <td><a href="mailto:Kentuckyhbpa@gmail.com">Kentuckyhbpa@gmail.com</a></td> <!--TD: Table Cell -->
+                </tr><!--Close Tag-->
+                <tr>
+                    <!--New Row-->
+                    <td>Phone</td>
+                    <td>
+                        <a href="tel:+15023631077">502-363-1077</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Toll-Free</td>
+                    <td>
+                        <a href="tel:+18009284272">800-928-4272</a><!--a = anchor or "link"-->
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Fax</td>
+                    <td>
+                        <a href="tel:+15023676800">502-367-6800</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>This office is open year-round, Monday - Friday from 8:30am to 4:00pm</p>
+
+
+
+        <p>&copy; @DateTime.Now.Year - KHBPA</p>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

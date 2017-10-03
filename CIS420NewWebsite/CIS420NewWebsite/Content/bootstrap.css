@@ -1431,13 +1431,13 @@ textarea {
 }
 
 a {
-    color: #D4AF37;
+    color: #CFB53B;
     text-decoration: none;
 }
 
     a:hover,
     a:focus {
-        color: #D4AF37;
+        color: #CFB53B;
         text-decoration: underline;
     }
 
@@ -1448,6 +1448,10 @@ a {
 
 figure {
     margin: 0;
+}
+
+table{
+    margin: auto;
 }
 
 img {
@@ -1710,7 +1714,7 @@ mark,
 }
 
 .text-primary {
-    color: #D4AF37;
+    color: #CFB53B;
 }
 
 a.text-primary:hover,
@@ -1756,7 +1760,7 @@ a.text-danger:focus {
 
 .bg-primary {
     color: #fff;
-    background-color: #D4AF37;
+    background-color: #CFB53B;
 }
 
 a.bg-primary:hover,
@@ -3891,7 +3895,7 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #ffffff;
-    background-color: #D4AF37;
+    background-color: #CFB53B;
     border-color: transparent;
 }
 
@@ -3945,12 +3949,12 @@ fieldset[disabled] a.btn {
     .btn-primary.disabled.focus,
     .btn-primary[disabled].focus,
     fieldset[disabled] .btn-primary.focus {
-        background-color: #D4AF37;
+        background-color: #CFB53B;
         border-color: transparent;
     }
 
     .btn-primary .badge {
-        color: #D4AF37;
+        color: #CFB53B;
         background-color: #ffffff;
     }
 
@@ -4215,7 +4219,7 @@ fieldset[disabled] a.btn {
     }
 
 .btn-link {
-    color: #D4AF37;
+    color: #CFB53B;
     font-weight: normal;
     border-radius: 0;
 }
@@ -4239,7 +4243,7 @@ fieldset[disabled] a.btn {
 
             .btn-link:hover,
             .btn-link:focus {
-                color: #D4AF37;
+                color: #CFB53B;
                 text-decoration: underline;
                 background-color: transparent;
             }
@@ -4411,7 +4415,7 @@ tbody.collapse.in {
         color: #ffffff;
         text-decoration: none;
         outline: 0;
-        background-color: #D4AF37;
+        background-color: #CFB53B;
     }
 
     .dropdown-menu > .disabled > a,
@@ -4929,7 +4933,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .nav .open > a:hover,
     .nav .open > a:focus {
         background-color: #4e5d6c;
-        border-color: #D4AF37;
+        border-color: #CFB53B;
     }
 
     .nav .nav-divider {
@@ -5043,7 +5047,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .nav-pills > li.active > a:hover,
     .nav-pills > li.active > a:focus {
         color: #ffffff;
-        background-color: #D4AF37;
+        background-color: #CFB53B;
     }
 
 .nav-stacked > li {
@@ -5636,7 +5640,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 
 .navbar-inverse {
-    background-color: #D4AF37;
+    background-color: #CFB53B;
     border-color: transparent;
 }
 
@@ -5838,7 +5842,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .pagination > .active > span:focus {
         z-index: 3;
         color: #ebebeb;
-        background-color: #D4AF37;
+        background-color: #CFB53B;
         border-color: transparent;
         cursor: default;
     }
@@ -5977,7 +5981,7 @@ a.label:focus {
     }
 
 .label-primary {
-    background-color: #D4AF37;
+    background-color: #CFB53B;
 }
 
     .label-primary[href]:hover,
@@ -6060,7 +6064,7 @@ a.badge:focus {
 
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-    color: #D4AF37;
+    color: #CFB53B;
     background-color: #ffffff;
 }
 
@@ -6150,7 +6154,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-    border-color: #D4AF37;
+    border-color: #CFB53B;
 }
 
 .thumbnail .caption {
@@ -6300,7 +6304,7 @@ a.thumbnail.active {
     line-height: 21px;
     color: #ffffff;
     text-align: center;
-    background-color: #D4AF37;
+    background-color: #CFB53B;
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     -webkit-transition: width 0.6s ease;
@@ -6499,8 +6503,8 @@ button.list-group-item {
 .list-group-item.active:focus {
     z-index: 2;
     color: #ffffff;
-    background-color: #D4AF37;
-    border-color: #D4AF37;
+    background-color: #CFB53B;
+    border-color: #CFB53B;
 }
 
     .list-group-item.active .list-group-item-heading,
@@ -6970,7 +6974,7 @@ button.list-group-item-danger {
 
     .panel-primary > .panel-heading {
         color: #ffffff;
-        background-color: #D4AF37;
+        background-color: #CFB53B;
         border-color: transparent;
     }
 
@@ -6979,7 +6983,7 @@ button.list-group-item-danger {
         }
 
         .panel-primary > .panel-heading .badge {
-            color: #D4AF37;
+            color: #CFB53B;
             background-color: #ffffff;
         }
 
@@ -8210,7 +8214,7 @@ button.close {
 
 .navbar-inverse .badge {
     background-color: #fff;
-    color: #D4AF37;
+    color: #CFB53B;
 }
 
 .btn-default:hover {
@@ -8224,7 +8228,7 @@ button.close {
 
 .text-primary,
 .text-primary:hover {
-    color: #D4AF37;
+    color: #CFB53B;
 }
 
 .text-success,
