@@ -5642,6 +5642,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-inverse {
     background-color: #CFB53B;
     border-color: transparent;
+
 }
 
     .navbar-inverse .navbar-brand {
@@ -5665,7 +5666,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         .navbar-inverse .navbar-nav > li > a:hover,
         .navbar-inverse .navbar-nav > li > a:focus {
             color: #ebebeb;
-            background-color: #c85e17;
+            background-color: #b99f2d;
+            height: 50px;
+            
         }
 
     .navbar-inverse .navbar-nav > .active > a,
@@ -5679,16 +5682,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .navbar-inverse .navbar-nav > .disabled > a:hover,
     .navbar-inverse .navbar-nav > .disabled > a:focus {
         color: #444444;
-        background-color: transparent;
+        background-color: #cfb53b;
     }
 
     .navbar-inverse .navbar-toggle {
-        border-color: transparent;
+        border-color: #cfb53b;
     }
 
         .navbar-inverse .navbar-toggle:hover,
         .navbar-inverse .navbar-toggle:focus {
-            background-color: #c85e17;
+            background-color: #b99f2d;
         }
 
         .navbar-inverse .navbar-toggle .icon-bar {
@@ -5709,11 +5712,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-        border-color: transparent;
+        border-color: #cfb53b;
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-        background-color: transparent;
+        background-color: #cfb53b;
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
@@ -5737,7 +5740,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
     .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
         color: #444444;
-        background-color: transparent;
+        background-color: #cfb53b;
     }
 }
 
