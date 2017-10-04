@@ -250,8 +250,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\Images\horse1.jpg" />
     <Content Include="Content\Images\horse2.jpg" />
     <Content Include="Content\Images\HorseRacing3.jpg" />
+    <Content Include="Content\Images\Horses3.jpg" />
+    <Content Include="Content\Images\horses4.jpg" />
     <Content Include="Content\Images\HorseTrainer.jpg" />
     <Content Include="Content\Images\horse_racing-17.jpg" />
     <Content Include="Content\Images\IMG_1540.JPG" />
@@ -259,6 +262,10 @@
     <Content Include="Content\Images\Kentucky Derby 2.jpg" />
     <Content Include="Content\Images\kentuckyderby-hero7.jpg" />
     <Content Include="Content\Images\khbpalogo.png" />
+    <Content Include="Content\Images\Ky HBPA LOGO 10 09 %282%29.png" />
+    <Content Include="Content\Images\Picture1.png" />
+    <Content Include="Content\Images\Picture2.png" />
+    <Content Include="Content\Images\race2.jpg" />
     <Content Include="Content\Images\Racing2.jpg" />
     <Content Include="Content\Images\winners circle.jpg" />
     <Content Include="Content\Images\WinnersCircle2.jpg" />
