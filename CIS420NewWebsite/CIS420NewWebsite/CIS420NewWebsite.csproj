@@ -250,18 +250,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\Images\AP_440029536994.jpg" />
+    <Content Include="Content\Images\home_4.jpg" />
+    <Content Include="Content\Images\Horse-racing-in-Bac-Ha-p2.jpg" />
     <Content Include="Content\Images\horse2.jpg" />
-    <Content Include="Content\Images\HorseRacing3.jpg" />
-    <Content Include="Content\Images\HorseTrainer.jpg" />
     <Content Include="Content\Images\horse_racing-17.jpg" />
-    <Content Include="Content\Images\IMG_1540.JPG" />
-    <Content Include="Content\Images\IMG_1571.JPG" />
     <Content Include="Content\Images\Kentucky Derby 2.jpg" />
     <Content Include="Content\Images\kentuckyderby-hero7.jpg" />
     <Content Include="Content\Images\khbpalogo.png" />
-    <Content Include="Content\Images\Racing2.jpg" />
-    <Content Include="Content\Images\winners circle.jpg" />
-    <Content Include="Content\Images\WinnersCircle2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
