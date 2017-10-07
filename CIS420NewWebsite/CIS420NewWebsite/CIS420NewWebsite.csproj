@@ -251,6 +251,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\Images\AP_440029536994.jpg" />
+    <Content Include="Content\Images\favicons.png" />
     <Content Include="Content\Images\home_4.jpg" />
     <Content Include="Content\Images\Horse-racing-in-Bac-Ha-p2.jpg" />
     <Content Include="Content\Images\horse2.jpg" />
