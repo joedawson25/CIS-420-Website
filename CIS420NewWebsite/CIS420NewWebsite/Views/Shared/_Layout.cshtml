@@ -18,12 +18,15 @@
             <div class="navbar-header">
 
                 <a style="padding-left:60px; padding-right:50px;" href="~/Home/Index"> <img src="http://red.cis420.net/Content/Images/khbpalogo.png" style="height:50px; " /></a>
-                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                
             </div>
             <div class="navbar-collapse collapse" style="font-size:20px;">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Donate", "Index", "Donor")</li>
                     <li>@Html.ActionLink("Events", "Events", "Home")</li>
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
@@ -131,8 +134,10 @@
                     </div>
         </div>
         <p>This office is open year-round, Monday - Friday from 8:30am to 4:00pm</p>
-
-
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_BUTTON_ID_HERE">
+            <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="PayPal - The safer, easier way to pay online!" />
+        </a>
+        <!--Need to add KHBPA Paypal code to where it says YOUR BUTTON ID HERE-->
 
 
         <p>&copy; @DateTime.Now.Year - KHBPA</p>
