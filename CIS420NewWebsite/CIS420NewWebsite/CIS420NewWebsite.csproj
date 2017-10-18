@@ -254,6 +254,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\Images\Ellis_Park.jpg" />
+    <Content Include="Content\Images\Front_Office.jpg" />
     <Content Include="Content\Images\horse1.jpg" />
     <Content Include="Content\Images\horse2.jpg" />
     <Content Include="Content\Images\Horses3.jpg" />
