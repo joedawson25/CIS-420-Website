@@ -504,7 +504,7 @@
     <Content Include="Views\Donor\Delete.cshtml" />
     <Content Include="Views\Donor\Details.cshtml" />
     <Content Include="Views\Donor\Edit.cshtml" />
-    <Content Include="Views\Donor\Index.cshtml" />
+    <Content Include="Views\Donor\Donate.cshtml" />
     <Content Include="Views\Home\Events.cshtml" />
     <Content Include="Views\Home\History.cshtml" />
     <Content Include="Views\Home\News.cshtml" />
@@ -525,6 +525,8 @@
     <Content Include="Views\Calendar\Details.cshtml" />
     <Content Include="Views\Calendar\Edit.cshtml" />
     <Content Include="Views\Calendar\Index.cshtml" />
+    <Content Include="Views\Home\Donate.cshtml" />
+    <Content Include="Views\Home\LocalNews.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
