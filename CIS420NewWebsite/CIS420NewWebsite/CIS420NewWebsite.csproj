@@ -250,18 +250,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\Images\AP_440029536994.jpg" />
-    <Content Include="Content\Images\favicons.png" />
-    <Content Include="Content\Images\home_4.jpg" />
-    <Content Include="Content\Images\Horse-racing-in-Bac-Ha-p2.jpg" />
+    <Content Include="Content\Images\horse1.jpg" />
     <Content Include="Content\Images\horse2.jpg" />
+    <Content Include="Content\Images\HorseRacing3.jpg" />
+    <Content Include="Content\Images\Horses3.jpg" />
+    <Content Include="Content\Images\horses4.jpg" />
+    <Content Include="Content\Images\HorseTrainer.jpg" />
     <Content Include="Content\Images\horse_racing-17.jpg" />
+    <Content Include="Content\Images\IMG_1540.JPG" />
+    <Content Include="Content\Images\IMG_1571.JPG" />
     <Content Include="Content\Images\Kentucky Derby 2.jpg" />
     <Content Include="Content\Images\kentuckyderby-hero7.jpg" />
     <Content Include="Content\Images\khbpalogo.png" />
-    <Content Include="Content\Images\NewFolder1\Ellis_Park.jpg" />
-    <Content Include="Content\Images\NewFolder1\Front_Office.jpg" />
-    <Content Include="Content\Images\NewFolder1\HE%27LL PAY - The Rushaway - 04-02-16 - R08 - TP - Inside Finish.jpg" />
+    <Content Include="Content\Images\Ky HBPA LOGO 10 09 %282%29.png" />
+    <Content Include="Content\Images\LogoNew.png" />
+    <Content Include="Content\Images\Picture1.png" />
+    <Content Include="Content\Images\Picture2.png" />
+    <Content Include="Content\Images\race2.jpg" />
+    <Content Include="Content\Images\Racing2.jpg" />
+    <Content Include="Content\Images\winners circle.jpg" />
+    <Content Include="Content\Images\WinnersCircle2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -295,6 +303,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -341,10 +350,10 @@
     <Content Include="Views\Home\News.cshtml" />
     <Content Include="Views\Home\Documents.cshtml" />
     <Content Include="Views\Home\RaceInfo.cshtml" />
-    <Content Include="Views\Shared\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
