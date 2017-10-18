@@ -259,6 +259,9 @@
     <Content Include="Content\Images\Kentucky Derby 2.jpg" />
     <Content Include="Content\Images\kentuckyderby-hero7.jpg" />
     <Content Include="Content\Images\khbpalogo.png" />
+    <Content Include="Content\Images\NewFolder1\Ellis_Park.jpg" />
+    <Content Include="Content\Images\NewFolder1\Front_Office.jpg" />
+    <Content Include="Content\Images\NewFolder1\HE%27LL PAY - The Rushaway - 04-02-16 - R08 - TP - Inside Finish.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -342,7 +345,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
