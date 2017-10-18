@@ -238,6 +238,10 @@
     <Compile Include="Migrations\201710181539441_101817.Designer.cs">
       <DependentUpon>201710181539441_101817.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710181653037_1018172.cs" />
+    <Compile Include="Migrations\201710181653037_1018172.Designer.cs">
+      <DependentUpon>201710181653037_1018172.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -269,6 +273,9 @@
     <Content Include="Content\Images\LogoNew.png" />
     <Content Include="Content\Images\Picture1.png" />
     <Content Include="Content\Images\Picture2.png" />
+    <Content Include="Content\Images\preakness.jpg" />
+    <Content Include="Content\Images\preakness2.jpg" />
+    <Content Include="Content\Images\preaknessPostRace.jpg" />
     <Content Include="Content\Images\race2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -350,6 +357,7 @@
     <Content Include="Views\Home\Documents.cshtml" />
     <Content Include="Views\Home\RaceInfo.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Localnews.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -398,6 +406,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710181539441_101817.resx">
       <DependentUpon>201710181539441_101817.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710181653037_1018172.resx">
+      <DependentUpon>201710181653037_1018172.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
