@@ -44,26 +44,38 @@
                             </div>
                         </div>
                     </li>
-     
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
                         <div class="container dropdown-menu">
-                                <div class="co">
-                                    @Html.ActionLink("About us", "About", "Home")<br/>
-                                    @Html.ActionLink("History", "History", "Home")<br/>
-                                    @Html.ActionLink("Racing Info", "RaceInfo", "Home")
-                                </div>
+                            <div class="co">
+                                @Html.ActionLink("About us", "About", "Home")<br />
+                                @Html.ActionLink("History", "History", "Home")<br />
+                                @Html.ActionLink("Racing Info", "RaceInfo", "Home")
                             </div>
-
                         </div>
                     </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+                        <div class="container dropdown-menu">
+                            <div class="co">
+                                @Html.ActionLink("Events", "Events", "Home")<br />
+                                @Html.ActionLink("Local News", "Localnews", "Home")<br />
+                                @Html.ActionLink("Racing Info", "RaceInfo", "Home")
+                            </div>
+                        </div>
 
-                </ul>
+            </div>
+            </li>
+
+            </ul>
+        </div>
+
                 <div style="padding-right:25px;">@Html.Partial("_LoginPartial")</div>
 
             </div>
         </div>
-    </div>
+
 
     <div style="text-align:center">
         @RenderBody()

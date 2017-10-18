@@ -357,6 +357,7 @@
     <Content Include="Views\Home\Documents.cshtml" />
     <Content Include="Views\Home\RaceInfo.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Localnews.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
