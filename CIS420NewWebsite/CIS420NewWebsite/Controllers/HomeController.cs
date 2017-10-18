@@ -28,6 +28,7 @@ namespace CIS420NewWebsite.Controllers
        
         public ActionResult Events()
         {
+           
             return View();
         }
         public ActionResult History()
