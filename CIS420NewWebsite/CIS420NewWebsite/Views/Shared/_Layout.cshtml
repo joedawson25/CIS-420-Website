@@ -2,102 +2,120 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <link href="~/Content/Images/favicons.png" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - KHBPA</title>
+    <title>Kentucky HBPA | @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
-
     <div class="navbar navbar-inverse navbar-fixed-top" style="height: 50px;">
-
-        <div class="container">
+        <div>
             <div class="navbar-header">
+                <a style="padding-left:60px; padding-right:50px;" href="~/Home/Index"> <img src="" style="height:50px; " /></a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("KHBPA", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
             </div>
-            <div class="navbar-collapse collapse" style="font-size:17px; ">
+            <div class="navbar-collapse collapse" style="font-size:20px;">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Donate", "Index", "Donor")</li>
-                    <li>@Html.ActionLink("Events", "Index", "Events")</li>
-                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
-                    <li>@Html.ActionLink("History", "History", "Home")</li>
-                    <li>@Html.ActionLink("News", "News", "Home")</li>
-                    <li>@Html.ActionLink("Documents", "Documents", "Home")</li>
-                    <li>@Html.ActionLink("Race Info", "RaceInfo", "Home")</li>
-                    <li class="invisible" style="width:70px;">@Html.ActionLink("Race Info", "", "")</li>
+                    @*<li>@Html.ActionLink("Events", "Events", "Home")</li>*@
+                    @*<li>@Html.ActionLink("About Us", "About", "Home")</li>*@
+                    @*<li>@Html.ActionLink("Documents", "Documents", "Home")</li>*@
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="dropdown">
+                        <!-- Creates the dropdown. This one is for Members-->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Member <span class="caret"></span></a>
+                        <div class="container dropdown-menu">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    @Html.Partial("_LoginPartial")
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    @Html.ActionLink("Documents", "Documents", "Home")
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
-                    <li><img src="~/Content/Images/khbpalogo.png" style="height:50px; " /></li>
-
-
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
+                        <div class="container dropdown-menu">
+                            <div class="co">
+                                @Html.ActionLink("About us", "About", "Home")<br />
+                                @Html.ActionLink("History", "History", "Home")<br />
+                                @Html.ActionLink("Racing Info", "RaceInfo", "Home")
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+                        <div class="container dropdown-menu">
+                            <div class="co">
+                                @Html.ActionLink("Events", "Events", "Home")<br />
+                                @Html.ActionLink("Local News", "Localnews", "Home")<br />
+                                @Html.ActionLink("Racing Info", "RaceInfo", "Home")
+                            </div>
+                        </div>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                <div style="padding-right:25px;">@Html.Partial("_LoginPartial")</div>
             </div>
+    
+            
+          
         </div>
-    </div>
+
+                
+        </div>
 
 
-
-    <div class="container body-content">
+    <div style="text-align:center">
         @RenderBody()
         <hr />
-        <footer>
-            <h3>Contact</h3>
-            <a target="_blank" href="https://goo.gl/maps/xBqGKXK2fju">
-                <address>
-                    Kentucky HBPA<br />
-                    3729 S. Fourth St.<br />
-                    Louisville, KY 40214-1712
-                </address>
-            </a>
-            <table>
-                <tbody>
-                    <tr>
-                        <!--TR: Table Row Open Tag-->
-                        <td>Email</td>
-                        <td><a href="mailto:Kentuckyhbpa@gmail.com">Kentuckyhbpa@gmail.com</a></td> <!--TD: Table Cell -->
-                    </tr><!--Close Tag-->
-                    <tr>
-                        <!--New Row-->
-                        <td>Phone</td>
-                        <td>
-                            <a href="tel:+15023631077">502-363-1077</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Toll-Free</td>
-                        <td>
-                            <a href="tel:+18009284272">800-928-4272</a><!--a = anchor or "link"-->
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>Fax</td>
-                        <td>
-                            <a href="tel:+15023676800">502-367-6800</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>This office is open year-round, Monday - Friday from 8:30am to 4:00pm</p>
-
-
-
-            <p>&copy; @DateTime.Now.Year - KHBPA</p>
-        </footer>
     </div>
 
+    <footer style="text-align: center;">
+        <div>
+            <a target="_blank" href="https://goo.gl/maps/xBqGKXK2fju">
+                Kentucky HBPA |
+                3729 S. Fourth St. |
+                Louisville, KY 40214-1712
+            </a>
+            <br />
+            Email
+            <a href="mailto:Kentuckyhbpa@gmail.com">Kentuckyhbpa@gmail.com</a> |
+            Phone
+            <a href="tel:+15023631077">502-363-1077</a> |
+            Toll-Free
+            <a href="tel:+18009284272">800-928-4272</a> |
+            Fax
+            <a href="tel:+15023676800">502-367-6800</a>
+        </div>
+        <p>This office is open year-round, Monday - Friday from 8:30am to 4:00pm</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="kentuckyhbpa@gmail.com">
+            <input type="hidden" name="lc" value="US">
+            <input type="hidden" name="item_name" value="KY HBPA">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+        <p>&copy; @DateTime.Now.Year - KHBPA</p>
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-
     <!--CTRL+K+D atuto styles indentation and code styling-->
-
 </body>
 </html>

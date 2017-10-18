@@ -31,3 +31,12 @@ td{
 table{
     margin-bottom: 1em;
 }
+
+/* Nav Header  */
+.dropdown-menu {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    min-width: 100%
+}
+/* Makes it the width of the screen, and starts at the base of the nav header*/
