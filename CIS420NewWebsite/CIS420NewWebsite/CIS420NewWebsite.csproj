@@ -527,6 +527,8 @@
     <Content Include="Views\Calendar\Index.cshtml" />
     <Content Include="Views\Home\Donate.cshtml" />
     <Content Include="Views\Home\LocalNews.cshtml" />
+    <Content Include="Views\Home\Benevolence.cshtml" />
+    <Content Include="Views\Home\BoardOfDirectors.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
