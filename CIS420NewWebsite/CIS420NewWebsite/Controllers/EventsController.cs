@@ -12,7 +12,7 @@ namespace CIS420NewWebsite.Controllers
 {
     public class EventsController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        public readonly ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Events
         public ActionResult Index()
