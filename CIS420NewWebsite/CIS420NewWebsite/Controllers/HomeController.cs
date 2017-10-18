@@ -17,6 +17,7 @@ namespace CIS420NewWebsite.Controllers
             return View();
         }
 
+        
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -24,13 +25,14 @@ namespace CIS420NewWebsite.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+       
+        public ActionResult Events()
         {
-            ViewBag.Message = "Your contact page.";
-
+           
             return View();
         }
-        public ActionResult Events()
+
+        public ActionResult Donate()
         {
             return View();
         }
@@ -58,11 +60,23 @@ namespace CIS420NewWebsite.Controllers
             return View(posts); // Becomes available to the view.
 
         }
+
+        [Authorize]
         public ActionResult Documents()
         {
             return View();
         }
         public ActionResult RaceInfo()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        public ActionResult LocalNews()
         {
             return View();
         }
