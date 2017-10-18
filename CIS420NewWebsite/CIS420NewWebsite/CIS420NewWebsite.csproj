@@ -196,6 +196,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Controllers\UserManagementController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,6 +240,14 @@
     <Compile Include="Migrations\201710181539441_101817.Designer.cs">
       <DependentUpon>201710181539441_101817.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710182055486_UserManagement.cs" />
+    <Compile Include="Migrations\201710182055486_UserManagement.Designer.cs">
+      <DependentUpon>201710182055486_UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710182057214_UserViewModel.cs" />
+    <Compile Include="Migrations\201710182057214_UserViewModel.Designer.cs">
+      <DependentUpon>201710182057214_UserViewModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -251,6 +260,9 @@
     <Compile Include="Mapping\DonorMapping.cs" />
     <Compile Include="Mapping\MemberMapping.cs" />
     <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\ViewModels\EditUserViewModel.cs" />
+    <Compile Include="Models\ViewModels\SelectRoleEditorViewModel.cs" />
+    <Compile Include="Models\ViewModels\SelectUserRolesViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -523,6 +535,9 @@
     <Content Include="Views\Home\News.cshtml" />
     <Content Include="Views\Home\Documents.cshtml" />
     <Content Include="Views\Home\RaceInfo.cshtml" />
+    <Content Include="Views\UserManagement\Delete.cshtml" />
+    <Content Include="Views\UserManagement\Edit.cshtml" />
+    <Content Include="Views\UserManagement\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -571,6 +586,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710181539441_101817.resx">
       <DependentUpon>201710181539441_101817.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710182055486_UserManagement.resx">
+      <DependentUpon>201710182055486_UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710182057214_UserViewModel.resx">
+      <DependentUpon>201710182057214_UserViewModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
