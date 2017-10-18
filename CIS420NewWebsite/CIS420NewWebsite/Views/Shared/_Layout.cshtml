@@ -23,7 +23,7 @@
             <div class="navbar-collapse collapse" style="font-size:20px;">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Donate", "Index", "Donor")</li>
+                    <li>@Html.ActionLink("Donate", "Donate", "Home")</li>
                     @*<li>@Html.ActionLink("Events", "Events", "Home")</li>*@
                     @*<li>@Html.ActionLink("About Us", "About", "Home")</li>*@
                     @*<li>@Html.ActionLink("Documents", "Documents", "Home")</li>*@
@@ -49,7 +49,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
                         <div class="container dropdown-menu">
                             <div class="co">
-                                @Html.ActionLink("About us", "About", "Home")<br />
+                                @Html.ActionLink("About Us", "About", "Home")<br />
                                 @Html.ActionLink("History", "History", "Home")<br />
                                 @Html.ActionLink("Racing Info", "RaceInfo", "Home")
                             </div>
@@ -61,7 +61,7 @@
                             <div class="co">
                                 @Html.ActionLink("Events", "Events", "Home")<br />
                                 @Html.ActionLink("Local News", "Localnews", "Home")<br />
-                                @Html.ActionLink("Racing Info", "RaceInfo", "Home")
+                                @Html.ActionLink("National News", "News", "Home")
                             </div>
                         </div>
                 </ul>

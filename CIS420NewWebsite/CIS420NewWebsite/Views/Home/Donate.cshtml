@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CIS420NewWebsite.Models.Donor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>
+    
+    Why Donate?</h2>
+<p>    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar nec libero in convallis. Maecenas ut dolor sit amet sapien ullamcorper luctus. Aliquam nec ex aliquam, mattis orci eget, sollicitudin quam. Duis sapien metus, vehicula vitae ante eu, laoreet cursus odio. Aenean venenatis quam ut metus commodo, vel congue nibh ornare. Sed ac massa vitae sapien malesuada laoreet sit amet pulvinar leo. Maecenas ac iaculis nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed id nunc mi. Mauris a orci sed lorem commodo pellentesque. Suspendisse tempor non diam et consequat. Donec nunc nunc, aliquet sed bibendum sit amet, malesuada vehicula orci.
+
+    Nulla sed pulvinar lorem. Vestibulum in tellus a nunc molestie sagittis nec sed neque. Cras at dictum ante, sed faucibus augue. Nam fringilla id magna quis euismod. Praesent rhoncus turpis vel libero dignissim, quis congue quam convallis. Nunc ornare risus et blandit molestie. Aliquam porta pretium odio, ac aliquam ipsum pretium vitae. Pellentesque quam massa, commodo nec malesuada eget, iaculis id risus. Pellentesque ut augue enim. Fusce sodales nisi ipsum, vitae malesuada elit vestibulum vitae. Ut in aliquet elit. </p>
+<h3>Donate Now!</h3>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_donations">
+    <input type="hidden" name="business" value="kentuckyhbpa@gmail.com">
+    <input type="hidden" name="lc" value="US">
+    <input type="hidden" name="item_name" value="KY HBPA">
+    <input type="hidden" name="no_note" value="0">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>

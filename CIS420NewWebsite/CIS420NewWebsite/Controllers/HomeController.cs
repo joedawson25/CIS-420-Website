@@ -31,6 +31,11 @@ namespace CIS420NewWebsite.Controllers
            
             return View();
         }
+
+        public ActionResult Donate()
+        {
+            return View();
+        }
         public ActionResult History()
         {
             return View();
@@ -62,6 +67,16 @@ namespace CIS420NewWebsite.Controllers
             return View();
         }
         public ActionResult RaceInfo()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        public ActionResult LocalNews()
         {
             return View();
         }
