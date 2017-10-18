@@ -17,11 +17,6 @@ namespace CIS420NewWebsite.Controllers
         {
             return View();
         }
-        // GET: Donor
-        public ActionResult Index()
-        {
-            return View(db.Donors.ToList());
-        }
 
         // GET: Donor/Details/5
         public ActionResult Details(string id)
