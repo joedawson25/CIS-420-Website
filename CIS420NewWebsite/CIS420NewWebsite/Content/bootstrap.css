@@ -1719,7 +1719,7 @@ mark,
 
 a.text-primary:hover,
 a.text-primary:focus {
-    color: #b15315;
+    color: #CFB53B;
 }
 
 .text-success {
@@ -1765,7 +1765,7 @@ a.text-danger:focus {
 
 a.bg-primary:hover,
 a.bg-primary:focus {
-    background-color: #b15315;
+    background-color: #CFB53B;
 }
 
 .bg-success {
@@ -3902,13 +3902,13 @@ fieldset[disabled] a.btn {
     .btn-primary:focus,
     .btn-primary.focus {
         color: #ffffff;
-        background-color: #b15315;
+        background-color: #CFB53B;
         border-color: rgba(0, 0, 0, 0);
     }
 
     .btn-primary:hover {
         color: #ffffff;
-        background-color: #b15315;
+        background-color: #CFB53B;
         border-color: rgba(0, 0, 0, 0);
     }
 
@@ -3916,7 +3916,7 @@ fieldset[disabled] a.btn {
     .btn-primary.active,
     .open > .dropdown-toggle.btn-primary {
         color: #ffffff;
-        background-color: #b15315;
+        background-color: #CFB53B;
         border-color: rgba(0, 0, 0, 0);
     }
 
@@ -5675,7 +5675,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .navbar-inverse .navbar-nav > .active > a:hover,
     .navbar-inverse .navbar-nav > .active > a:focus {
         color: #ebebeb;
-        background-color: #c85e17;
+        background-color: #CFB53B;
     }
 
     .navbar-inverse .navbar-nav > .disabled > a,
@@ -5706,7 +5706,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .navbar-inverse .navbar-nav > .open > a,
     .navbar-inverse .navbar-nav > .open > a:hover,
     .navbar-inverse .navbar-nav > .open > a:focus {
-        background-color: #c85e17;
+        background-color: #CFB53B;
         color: #ebebeb;
     }
 
@@ -5726,14 +5726,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
         .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
             color: #ebebeb;
-            background-color: #c85e17;
+            background-color: #CFB53B;
         }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
     .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
     .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
         color: #ebebeb;
-        background-color: #c85e17;
+        background-color: #CFB53B;
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
@@ -5989,7 +5989,7 @@ a.label:focus {
 
     .label-primary[href]:hover,
     .label-primary[href]:focus {
-        background-color: #b15315;
+        background-color: #CFB53B;
     }
 
 .label-success {
@@ -7592,7 +7592,9 @@ button.close {
 
 .carousel {
     position: relative;
+    min-height: 100%;
 }
+
 
 .carousel-inner {
     position: relative;
