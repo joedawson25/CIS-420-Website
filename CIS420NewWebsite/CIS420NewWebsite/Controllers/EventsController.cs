@@ -98,6 +98,5 @@ namespace CIS420NewWebsite.Controllers
 
             return View("Index");
         }
-
     }
 }
