@@ -1,45 +1,94 @@
-﻿@model IEnumerable<CIS420NewWebsite.Models.Event>
+﻿@*https://docs.dhtmlx.com/scheduler/how_to_start.html*@
+<script src="~/Scripts/dhtmlxScheduler/dhtmlxscheduler.js"></script>
+<link href="~/Scripts/dhtmlxScheduler/dhtmlxscheduler.css" rel="stylesheet" />
 
-@{
-    ViewBag.Title = "Index";
-}
+<h2>Calendar of Events</h2>
 
-<h2>Index</h2>
+<div id="scheduler_here" class="dhx_cal_container" style='width:100%; height:700px; padding:10px;'>
+    <div class="dhx_cal_navline">
+        <div class="dhx_cal_prev_button">&nbsp;</div>
+        <div class="dhx_cal_next_button">&nbsp;</div>
+        <div class="dhx_cal_today_button"></div>
+        <div class="dhx_cal_date"></div>
+        <div class="dhx_cal_tab" name="day_tab" style="right: 204px;"></div>
+        <div class="dhx_cal_tab" name="week_tab" style="right: 140px;"></div>
+        <div class="dhx_cal_tab" name="month_tab" style="right: 76px;"></div>
+    </div>
+    <div class="dhx_cal_header"></div>
+    <div class="dhx_cal_data"></div>
+</div>
+<script>
+    var textofEventLastModified;
+    var isEditable = true;
+    var eventWasJustDeleted = false;
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.text)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.start_date)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.end_date)
-        </th>
-        <th></th>
-    </tr>
+    scheduler.config.xml_date = "%m/%d/%y %H:%i";
+    scheduler.init('scheduler_here', new Date(), "month");
+    scheduler.load("/Event/Data", "json");  //path to the newly created action
+    scheduler.config.full_day = true;
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.text)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.start_date)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.end_date)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
-        </td>
-    </tr>
-}
 
-</table>
+    scheduler.attachEvent("onAfterLightbox", function () {
+        textofEventLastModified = $('textarea').val();
+        var currentEvents = scheduler.getEvents();
+        //var ev = currentEvents[currentEvents.length - 1];
+
+        var obj = currentEvents.filter(function (obj) {
+            return obj["text"] === textofEventLastModified;
+        })[0];
+
+        if (eventWasJustDeleted) {
+            return;
+        }
+        var props = { "id": obj.id, "text": obj.text , "start_date": obj.start_date, "end_date": obj.end_date};
+
+        $.ajax({
+            url: "/Event/Save",
+            contentType: "application/json",
+            async: true,
+            type: "POST",
+            dataType: "json",
+            data: JSON.stringify(props),
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("FAIL: " + errorThrown);
+            },
+            success: function (data, textStatus, jqXHR) {
+                scheduler.init('scheduler_here', new Date(), "month");
+                console.log("SUCCES");
+            }
+        });
+        eventWasJustDeleted = false;
+        scheduler.init('scheduler_here', new Date(), "month");
+    });
+    scheduler.attachEvent("onBeforeEventDelete", function () {
+        textofEventLastModified = $('textarea').val();
+        var currentEvents = scheduler.getEvents();
+        //var ev = currentEvents[currentEvents.length - 1];
+
+        var obj = currentEvents.filter(function (obj) {
+            return obj["text"] === textofEventLastModified;
+        })[0];
+
+
+        var props = { "id": obj.id, "text": obj.text, "start_date": obj.start_date, "end_date": obj.end_date };
+
+        $.ajax({
+            url: "/Event/Delete",
+            contentType: "application/json",
+            async: true,
+            type: "POST",
+            dataType: "json",
+            data: JSON.stringify(props),
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("FAIL: " + errorThrown);
+            },
+            success: function (data, textStatus, jqXHR) {
+                scheduler.init('scheduler_here', new Date(), "month");
+                console.log("SUCCES");
+            }
+        });
+        eventWasJustDeleted = true;
+    });
+
+
+</script>
