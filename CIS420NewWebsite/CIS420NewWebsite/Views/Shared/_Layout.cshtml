@@ -28,44 +28,33 @@
                     @*<li>@Html.ActionLink("User Management", "Index", "UserManagement")</li>*@
                     @*<li>@Html.ActionLink("About Us", "About", "Home") </li>*@
                     @*<li>@Html.ActionLink("Events", "Index", "Events")</li>*@
-                   
+
                     <li class="dropdown">
-                        <!-- Creates the dropdown. This one is for Members-->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Member <span class="caret"></span></a>
-                        <div class="container dropdown-menu">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    @Html.Partial("_LoginPartial")
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-8">
-                                    @Html.ActionLink("Documents", "Documents", "Home")
-                                    @Html.ActionLink("User Management", "Index", "UserManagement")
-                                </div>
-                            </div>
-                        </div>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Member<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li> <a href="Documents">Documents</a></li>
+                            <li> <a href="UserManagement">User Management</a></li>
+                            @*@Html.ActionLink("Documents", "Documents", "Home")
+                    @Html.ActionLink("User Management", "Index", "UserManagement")*@
+                        </ul>
                     </li>
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
-                        <div class="container dropdown-menu">
-                            <div class="co">
-                                @Html.ActionLink("About Us", "About", "Home")<br />
-                                @Html.ActionLink("History", "History", "Home")<br />
-                                @Html.ActionLink("Racing Info", "RaceInfo", "Home")
-                            </div>
-                        </div>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li> <a href="About">About Us</a></li>
+                            <li> <a href="History">History</a></li>
+                            <li> <a href="Raceinfo">Racing Info</a></li>
+
+                        </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
-                        <div class="container dropdown-menu">
-                            <div class="co">
-                                @Html.ActionLink("Events", "Index", "Events")<br />
-                                @Html.ActionLink("Local News", "Localnews", "Home")<br />
-                                @Html.ActionLink("National News", "News", "Home")
-                            </div>
-                        </div>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li> <a href="Events">Events</a></li>
+                            <li> <a href="Localnews">Local News</a></li>
+                            <li> <a href="News">National News</a></li>
+                            </ul>
                 </ul>
                 <div style="padding-right:25px;">@Html.Partial("_LoginPartial")</div>
             </div>
