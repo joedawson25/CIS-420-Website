@@ -25,9 +25,9 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Donate", "Donate", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("User Management", "Index", "UserManagement")</li>
-                    <li>@Html.ActionLink("About Us", "About", "Home") </li>
-                    <li>@Html.ActionLink("Events", "Index", "Events")</li>
+                    @*<li>@Html.ActionLink("User Management", "Index", "UserManagement")</li>*@
+                    @*<li>@Html.ActionLink("About Us", "About", "Home") </li>*@
+                    @*<li>@Html.ActionLink("Events", "Index", "Events")</li>*@
                    
                     <li class="dropdown">
                         <!-- Creates the dropdown. This one is for Members-->
@@ -41,13 +41,31 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     @Html.ActionLink("Documents", "Documents", "Home")
+                                    @Html.ActionLink("User Management", "Index", "UserManagement")
                                 </div>
                             </div>
                         </div>
                     </li>
 
-                   
-                        
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
+                        <div class="container dropdown-menu">
+                            <div class="co">
+                                @Html.ActionLink("About Us", "About", "Home")<br />
+                                @Html.ActionLink("History", "History", "Home")<br />
+                                @Html.ActionLink("Racing Info", "RaceInfo", "Home")
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+                        <div class="container dropdown-menu">
+                            <div class="co">
+                                @Html.ActionLink("Events", "Index", "Events")<br />
+                                @Html.ActionLink("Local News", "Localnews", "Home")<br />
+                                @Html.ActionLink("National News", "News", "Home")
+                            </div>
+                        </div>
                 </ul>
                 <div style="padding-right:25px;">@Html.Partial("_LoginPartial")</div>
             </div>
