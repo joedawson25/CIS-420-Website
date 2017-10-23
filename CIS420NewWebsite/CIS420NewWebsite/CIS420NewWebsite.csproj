@@ -20,8 +20,10 @@
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
-    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressAnonymousAuthentication>
+    </IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>
+    </IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
@@ -276,6 +278,7 @@
     <Content Include="Content\Images\Horses3.jpg" />
     <Content Include="Content\Images\horses4.jpg" />
     <Content Include="Content\Images\horse_racing-17.jpg" />
+    <Content Include="Content\Images\Human Icon.png" />
     <Content Include="Content\Images\IMG_1540.JPG" />
     <Content Include="Content\Images\IMG_1571.JPG" />
     <Content Include="Content\Images\Kentucky Derby 2.jpg" />
