@@ -80,5 +80,15 @@ namespace CIS420NewWebsite.Controllers
         {
             return View();
         }
+
+        public ActionResult Benevolence()
+        {
+            return View();
+        }
+
+        public ActionResult BoardOfDirectors()
+        {
+            return View();
+        }
     }
 }
