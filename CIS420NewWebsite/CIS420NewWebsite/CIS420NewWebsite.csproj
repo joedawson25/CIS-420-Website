@@ -289,6 +289,9 @@
     <Content Include="Content\Images\preakness2.jpg" />
     <Content Include="Content\Images\preaknessPostRace.jpg" />
     <Content Include="Content\Images\race2.jpg" />
+    <Content Include="Content\Images\racinglittleslideshow1.JPG" />
+    <Content Include="Content\Images\racinglittleslideshow2.jpg" />
+    <Content Include="Content\Images\racinglittleslideshow3.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
