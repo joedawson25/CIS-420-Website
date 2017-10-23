@@ -20,8 +20,10 @@
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
-    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressAnonymousAuthentication>
+    </IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>
+    </IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
@@ -281,6 +283,7 @@
     <Content Include="Content\Images\Kentucky Derby 2.jpg" />
     <Content Include="Content\Images\kentuckyderby-hero7.jpg" />
     <Content Include="Content\Images\khbpalogo.png" />
+    <Content Include="Content\Images\khbpalogobigger.png" />
     <Content Include="Content\Images\Ky HBPA LOGO 10 09 %282%29.png" />
     <Content Include="Content\Images\LogoNew.png" />
     <Content Include="Content\Images\Picture1.png" />
@@ -292,6 +295,7 @@
     <Content Include="Content\Images\racinglittleslideshow1.JPG" />
     <Content Include="Content\Images\racinglittleslideshow2.jpg" />
     <Content Include="Content\Images\racinglittleslideshow3.jpg" />
+    <Content Include="Content\Images\white logo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
