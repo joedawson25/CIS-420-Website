@@ -7,7 +7,6 @@ namespace CIS420NewWebsite.Models
 {
     public class Event
     {
-        
         public int id { get; set; }
         public string text { get; set; }
         public DateTime start_date { get; set; }
