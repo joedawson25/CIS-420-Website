@@ -11,7 +11,7 @@ namespace CIS420NewWebsite.Models
         public string PhotoName { get; set; }
         public string Description { get; set; }
         public int ContentLength { get; set; }
-        public string ContectType { get; set; }
+        public string ContentType { get; set; }
         public DateTime DateUploaded { get; set; }
         public Member UploadedBy { get; set; }
     }

@@ -34,5 +34,7 @@ namespace CIS420NewWebsite.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<CIS420NewWebsite.Models.Photo> Photos { get; set; }
     }
 }
