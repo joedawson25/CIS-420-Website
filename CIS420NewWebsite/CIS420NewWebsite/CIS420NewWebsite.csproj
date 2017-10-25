@@ -251,6 +251,14 @@
     <Compile Include="Migrations\201710182057214_UserViewModel.Designer.cs">
       <DependentUpon>201710182057214_UserViewModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710231907430_102317.cs" />
+    <Compile Include="Migrations\201710231907430_102317.Designer.cs">
+      <DependentUpon>201710231907430_102317.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710251833563_102517.cs" />
+    <Compile Include="Migrations\201710251833563_102517.Designer.cs">
+      <DependentUpon>201710251833563_102517.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -282,8 +290,6 @@
     <Content Include="Content\Images\horses4.jpg" />
     <Content Include="Content\Images\horse_racing-17.jpg" />
     <Content Include="Content\Images\Human Icon.png" />
-    <Content Include="Content\Images\IMG_1540.JPG" />
-    <Content Include="Content\Images\IMG_1571.JPG" />
     <Content Include="Content\Images\Kentucky Derby 2.jpg" />
     <Content Include="Content\Images\kentuckyderby-hero7.jpg" />
     <Content Include="Content\Images\khbpalogo.png" />
@@ -542,7 +548,6 @@
     <Content Include="Views\Donor\Delete.cshtml" />
     <Content Include="Views\Donor\Details.cshtml" />
     <Content Include="Views\Donor\Edit.cshtml" />
-    <Content Include="Views\Donor\Index.cshtml" />
     <Content Include="Views\Home\Events.cshtml" />
     <Content Include="Views\Home\History.cshtml" />
     <Content Include="Views\Home\News.cshtml" />
@@ -613,6 +618,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710182057214_UserViewModel.resx">
       <DependentUpon>201710182057214_UserViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710231907430_102317.resx">
+      <DependentUpon>201710231907430_102317.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710251833563_102517.resx">
+      <DependentUpon>201710251833563_102517.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
