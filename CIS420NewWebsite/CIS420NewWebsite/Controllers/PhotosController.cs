@@ -7,6 +7,9 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CIS420NewWebsite.Models;
+using System.Threading.Tasks;
+using System.Drawing;
+using System.IO;
 
 namespace CIS420NewWebsite.Controllers
 {
@@ -46,16 +49,36 @@ namespace CIS420NewWebsite.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,PhotoName,Description,ContentLength,ContectType,DateUploaded")] Photo photo)
+        public async Task<ActionResult> Create(PhotoUploadViewModel photoUpload)
         {
-            if (ModelState.IsValid)
+            byte[] imageContent = null;
+            if (photoUpload.ImageData == null)
             {
-                db.Photos.Add(photo);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                ModelState.AddModelError("ImageData", "You must select an image to upload.");
+            }
+            else if ((imageContent = ToByteArray(photoUpload.ImageData.InputStream)) == null)
+            {
+                ModelState.AddModelError("ImageData", "The file you uploaded is not an acceptable type of image.");
             }
 
-            return View(photo);
+            if (ModelState.IsValid)
+            {
+                var photo = new Photo
+                {
+                    Content = imageContent,
+                    ContentLength = photoUpload.ImageData.ContentLength,
+                    ContentType = photoUpload.ImageData.ContentType,
+                    PhotoName = photoUpload.PhotoName,
+                    Description = photoUpload.Description,
+                    DateUploaded = DateTime.UtcNow,
+
+                };
+                db.Photos.Add(photo);
+                db.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(photoUpload);
         }
 
         // GET: Photos/Edit/5
@@ -113,6 +136,32 @@ namespace CIS420NewWebsite.Controllers
             db.Photos.Remove(photo);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public Image ToImage(Stream inputStream, bool useEmbeddedColorManagement = true, bool validateImageData = true)
+        {
+            Image result = null;
+            try
+            {
+                result = Image.FromStream(stream: inputStream, useEmbeddedColorManagement: useEmbeddedColorManagement, validateImageData: validateImageData);
+            }
+            catch (Exception e)
+            {
+                // Log exception
+            }
+            return result;
+        }
+
+        public byte[] ToByteArray(Stream inputStream)
+        {
+            return ToByteArray(ToImage(inputStream));
+        }
+
+        public byte[] ToByteArray(Image image)
+        {
+            MemoryStream ms = new MemoryStream();
+            image.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
+            return ms.ToArray();
         }
 
         protected override void Dispose(bool disposing)
