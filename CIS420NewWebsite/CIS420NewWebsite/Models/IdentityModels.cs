@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using CIS420NewWebsite.Migrations;
 
 namespace CIS420NewWebsite.Models
 {
@@ -23,6 +24,7 @@ namespace CIS420NewWebsite.Models
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ApplicationDbContext, Configuration>());
         }
 
         public DbSet<Member>Members { get; set; }

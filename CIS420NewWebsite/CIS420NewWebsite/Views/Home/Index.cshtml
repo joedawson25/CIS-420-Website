@@ -1,6 +1,8 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <div>
     <div id="mycarousel" class="carousel slide" data-ride="carousel" style="margin-top:0; border:0;">
         <ol class="carousel-indicators">
@@ -142,9 +144,11 @@
 
         </div>
     </div>
-    <script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
     <script>
+        $('.dropdown-toggle').dropdown();
+
+
         $('#myCarousel').carousel({
             interval: 8000
         });

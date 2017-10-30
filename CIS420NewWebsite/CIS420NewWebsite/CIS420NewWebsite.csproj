@@ -259,6 +259,14 @@
     <Compile Include="Migrations\201710251833563_102517.Designer.cs">
       <DependentUpon>201710251833563_102517.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710251904095_1025172-IgnoreChanges.cs" />
+    <Compile Include="Migrations\201710251904095_1025172-IgnoreChanges.Designer.cs">
+      <DependentUpon>201710251904095_1025172-IgnoreChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710251912251_TylersTest.cs" />
+    <Compile Include="Migrations\201710251912251_TylersTest.Designer.cs">
+      <DependentUpon>201710251912251_TylersTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -563,6 +571,11 @@
     <Content Include="Views\Photos\Details.cshtml" />
     <Content Include="Views\Photos\Edit.cshtml" />
     <Content Include="Views\Photos\Index.cshtml" />
+    <Content Include="Views\Home\Benevolence.cshtml" />
+    <Content Include="Views\Home\BoardOfDirectors.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Localnews.cshtml" />
+    <Content Include="Views\Home\Donate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -623,6 +636,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710251833563_102517.resx">
       <DependentUpon>201710251833563_102517.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710251904095_1025172-IgnoreChanges.resx">
+      <DependentUpon>201710251904095_1025172-IgnoreChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710251912251_TylersTest.resx">
+      <DependentUpon>201710251912251_TylersTest.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
