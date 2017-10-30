@@ -267,6 +267,10 @@
     <Compile Include="Migrations\201710251912251_TylersTest.Designer.cs">
       <DependentUpon>201710251912251_TylersTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710301855054_103017.cs" />
+    <Compile Include="Migrations\201710301855054_103017.Designer.cs">
+      <DependentUpon>201710301855054_103017.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -642,6 +646,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710251912251_TylersTest.resx">
       <DependentUpon>201710251912251_TylersTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710301855054_103017.resx">
+      <DependentUpon>201710301855054_103017.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
