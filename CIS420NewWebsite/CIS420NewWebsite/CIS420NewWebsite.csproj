@@ -577,9 +577,9 @@
     <Content Include="Views\Photos\Index.cshtml" />
     <Content Include="Views\Home\Benevolence.cshtml" />
     <Content Include="Views\Home\BoardOfDirectors.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Localnews.cshtml" />
     <Content Include="Views\Home\Donate.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
