@@ -294,7 +294,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\Images\61689-home-button.png" />
+    <Content Include="Content\Images\churchill downs logo.png" />
     <Content Include="Content\Images\Ellis_Park.jpg" />
+    <Content Include="Content\Images\ellis_park_logo_2014_20506978_ver1.0_640_480.jpg" />
     <Content Include="Content\Images\Horses_Go.jpg" />
     <Content Include="Content\Images\Front_Office.jpg" />
     <Content Include="Content\Images\horse1.jpg" />
@@ -303,11 +305,13 @@
     <Content Include="Content\Images\horses4.jpg" />
     <Content Include="Content\Images\horse_racing-17.jpg" />
     <Content Include="Content\Images\Human Icon.png" />
+    <Content Include="Content\Images\keeneland-logo.png" />
     <Content Include="Content\Images\Kentucky Derby 2.jpg" />
     <Content Include="Content\Images\kentuckyderby-hero7.jpg" />
     <Content Include="Content\Images\khbpalogo.png" />
     <Content Include="Content\Images\khbpalogobigger.png" />
     <Content Include="Content\Images\Ky HBPA LOGO 10 09 %282%29.png" />
+    <Content Include="Content\Images\kydownslogo.png" />
     <Content Include="Content\Images\LogoNew.png" />
     <Content Include="Content\Images\Picture1.png" />
     <Content Include="Content\Images\Picture2.png" />
@@ -318,6 +322,8 @@
     <Content Include="Content\Images\racinglittleslideshow1.JPG" />
     <Content Include="Content\Images\racinglittleslideshow2.jpg" />
     <Content Include="Content\Images\racinglittleslideshow3.jpg" />
+    <Content Include="Content\Images\taalogo.png" />
+    <Content Include="Content\Images\turfway_park.png" />
     <Content Include="Content\Images\white logo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
