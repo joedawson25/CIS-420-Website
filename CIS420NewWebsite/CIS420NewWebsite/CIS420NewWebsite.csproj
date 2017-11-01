@@ -293,6 +293,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\Images\61689-home-button.png" />
     <Content Include="Content\Images\Ellis_Park.jpg" />
     <Content Include="Content\Images\Horses_Go.jpg" />
     <Content Include="Content\Images\Front_Office.jpg" />
