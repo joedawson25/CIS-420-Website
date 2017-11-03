@@ -12,7 +12,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top" style="height: 50px;">
         <div>
             <div class="navbar-header">
-                <a style="padding-left:60px; padding-right:50px;" href="~/Home/Index"> <img src="" style="height:50px; " /></a>
+                <a style="padding-left:60px; padding-right:50px;" href="~/Home/Index"> <img src="" style="height:40px; " /></a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -20,9 +20,9 @@
                 </button>
 
             </div>
-            <div class="navbar-collapse collapse" style="font-size:20px;">
+            <div class="navbar-collapse collapse" style="font-size:20px; padding-top:5px;">
                 <ul class="nav navbar-nav">
-                    <li><a href="~/Home"><img src="~/Content/Images/61689-home-button.png" style="height:45px; padding-bottom:14px;"/></a></li>
+                    <li><img src="~/Content/Images/61689-home-button.png" style="background-color:inherit;"/></li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Donate", "Donate", "Home")</li>
                     @*<li>@Html.ActionLink("User Management", "Index", "UserManagement")</li>*@
@@ -49,7 +49,7 @@
                         <ul class="dropdown-menu">
                             <li>@Html.ActionLink("About Us", "About", "Home")</li>
                             <li>@Html.ActionLink("History", "History", "Home")</li>
-                            <li>@Html.ActionLink("Racing Info","Raceinfo","Home")</li>
+                            <li>@Html.ActionLink("Racing Info", "Raceinfo", "Home")</li>
                             <li>@Html.ActionLink("Benevolence", "Benevolence", "Home")</li>
                             <li>@Html.ActionLink("Board of Directors", "BoardOfDirectors", "Home")</li>
                         </ul>
@@ -57,31 +57,32 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Events","Index","Events")</li>
+                            <li>@Html.ActionLink("Events", "Index", "Events")</li>
                             <li>@Html.ActionLink("Local News", "Localnews", "Home")</li>
                             @*<li> <a href="Localnews">Local News</a></li>*@
                             <li>@Html.ActionLink("National News", "News", "Home")</li>
-                            </ul>
+                        </ul>
                 </ul>
                 <div style="padding-right:25px;">@Html.Partial("_LoginPartial")</div>
             </div>
-    
-            
-          
-        </div>
 
-                
+
+
         </div>
 
 
-    <div style="text-align:center">
+    </div>
+
+
+    <div style="text-align:center; ">
         @RenderBody()
         <hr />
     </div>
 
     <footer style="text-align: center;">
-        <div>
-            <a target="_blank" href="https://goo.gl/maps/xBqGKXK2fju">
+        <div >
+            
+            <a target="_blank" href="https://goo.gl/maps/xBqGKXK2fju" >
                 Kentucky HBPA |
                 3729 S. Fourth St. |
                 Louisville, KY 40214-1712
@@ -110,13 +111,13 @@
         </form>
 
         @*<a href="https://www.facebook.com/KYhbpa/" class="btn btn-social-icon btn-facebook" target="_blank">
-            <span class="fa fa-facebook-o">
-            </span>
-        </a>
+                <span class="fa fa-facebook-o">
+                </span>
+            </a>
 
-        <a href="https://twitter.com/kyhbpa" class="btn btn-social-icon btn-twitter" target="_blank">
-            <i class="fa fa-twitter"></i>
-        </a>*@
+            <a href="https://twitter.com/kyhbpa" class="btn btn-social-icon btn-twitter" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>*@
 
         <p>&copy; @DateTime.Now.Year - KHBPA</p>
     </footer>
