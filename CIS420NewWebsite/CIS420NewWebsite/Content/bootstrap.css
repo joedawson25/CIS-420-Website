@@ -304,6 +304,13 @@ th {
         display: none;
         text-decoration-color:#ffffff;
     }
+    
+    .nav > img
+    {
+        padding-top:0px;
+        margin-top:0px;
+        border-top:0px;
+    }
 
     .btn > .caret,
     .dropup > .btn > .caret {

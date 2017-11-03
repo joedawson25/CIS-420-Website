@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" style="height: 50px;">
+
         <div>
             <div class="navbar-header">
                 <a style="padding-left:60px; padding-right:50px;" href="~/Home/Index"> <img src="" style="height:40px; " /></a>
@@ -20,9 +21,11 @@
                 </button>
 
             </div>
+
+
             <div class="navbar-collapse collapse" style="font-size:20px; padding-top:5px;">
                 <ul class="nav navbar-nav">
-                    <li><img src="~/Content/Images/61689-home-button.png" style="background-color:inherit;"/></li>
+                    <li><a style="margin-bottom:12px; margin-top:0px; padding-top:0px; padding-bottom:12px;" href="@Url.Action("Index", "Home", null)"><img src="~/Content/Images/improved-home-button.png" /></a></li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Donate", "Donate", "Home")</li>
                     @*<li>@Html.ActionLink("User Management", "Index", "UserManagement")</li>*@
