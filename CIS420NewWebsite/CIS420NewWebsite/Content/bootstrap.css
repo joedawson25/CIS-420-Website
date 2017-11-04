@@ -1439,7 +1439,7 @@ textarea {
 }
 
 a {
-    color: #CFB53B;
+    color:white;
     text-decoration: none;
 }
 
@@ -8555,4 +8555,25 @@ a.list-group-item-danger.active {
 .fa-twitter {
     background: #55ACEE;
     color: white;
+}
+
+
+.popup:hover {
+    
+    opacity: .9;
+    transition: .5s ease;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.panel-body > h3, p
+{
+    color:white;
+}
+
+.homepagetable .tablebox
+{
+  
 }
