@@ -324,6 +324,10 @@
     <Content Include="Content\Images\racinglittleslideshow2.jpg" />
     <Content Include="Content\Images\racinglittleslideshow3.jpg" />
     <Content Include="Content\Images\taalogo.png" />
+    <Content Include="Content\Images\tablepic1.jpg" />
+    <Content Include="Content\Images\tablepic2.jpg" />
+    <Content Include="Content\Images\tablepic3.jpg" />
+    <Content Include="Content\Images\tablepic4.jpg" />
     <Content Include="Content\Images\turfway_park.png" />
     <Content Include="Content\Images\white logo.png" />
     <Content Include="favicon.ico" />

@@ -17,12 +17,12 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     width: 100%;
-    min-width:100%;
+    min-width: 100%;
 }
 
 body {
     margin: 0;
-    min-width:100%;
+    min-width: 100%;
 }
 
 article,
@@ -285,7 +285,6 @@ th {
     img {
         max-width: 100% !important;
         object-fit: contain;
-
     }
 
     p,
@@ -302,14 +301,13 @@ th {
 
     .navbar {
         display: none;
-        text-decoration-color:#ffffff;
+        text-decoration-color: #ffffff;
     }
-    
-    .nav > img
-    {
-        padding-top:0px;
-        margin-top:0px;
-        border-top:0px;
+
+    .nav > img {
+        padding-top: 0px;
+        margin-top: 0px;
+        border-top: 0px;
     }
 
     .btn > .caret,
@@ -1439,7 +1437,7 @@ textarea {
 }
 
 a {
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
@@ -1458,7 +1456,7 @@ figure {
     margin: 0;
 }
 
-table{
+table {
     margin: auto;
 }
 
@@ -5650,7 +5648,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-inverse {
     background-color: #CFB53B;
     border-color: transparent;
-
 }
 
     .navbar-inverse .navbar-brand {
@@ -5676,8 +5673,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
             color: #ebebeb;
             background-color: #b99f2d;
             height: 45px;
-            padding-bottom:10px;
-            
+            padding-bottom: 10px;
         }
 
     .navbar-inverse .navbar-nav > .active > a,
@@ -8559,7 +8555,6 @@ a.list-group-item-danger.active {
 
 
 .popup:hover {
-    
     opacity: .9;
     transition: .5s ease;
     background: rgba(0,0,0,0.5);
@@ -8568,12 +8563,39 @@ a.list-group-item-danger.active {
     text-align: center;
 }
 
-.panel-body > h3, p
-{
-    color:white;
+.panel-body > h3, p {
+    color: white;
 }
 
-.homepagetable .tablebox
+.homepagetable .tablebox {
+}
+
+/*TESTING OVERLAY*/
+
+.image-container {
+    position: relative;
+    width: 380px;
+    height: 240px;
+}
+
+    .image-container .after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        color: #FFF;
+    }
+
+.image-container:hover .after {
+        display: block;
+        background: rgba(0, 0, 0, .3);
+        margin-left: 15px;
+    }
+
+.image-container:hover .after > p
 {
-  
+    top:50%;
+    position:relative;
 }

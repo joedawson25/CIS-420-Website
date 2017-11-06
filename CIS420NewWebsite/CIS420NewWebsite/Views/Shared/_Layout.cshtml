@@ -7,6 +7,10 @@
     <title>Kentucky HBPA | @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <!--CTRL+K+D atuto styles indentation and code styling-->
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" style="height: 50px;">
@@ -82,51 +86,48 @@
         <hr />
     </div>
 
-    <footer style="text-align: center;">
-        <div>
+<footer style="text-align:center; bottom:0;">
+            <div>
 
-            <a target="_blank" href="https://goo.gl/maps/xBqGKXK2fju">
-                Kentucky HBPA |
-                3729 S. Fourth St. |
-                Louisville, KY 40214-1712
-            </a>
-            <br />
-            Email
-            <a href="mailto:Kentuckyhbpa@gmail.com">Kentuckyhbpa@gmail.com</a> |
-            Phone
-            <a href="tel:+15023631077">502-363-1077</a> |
-            Toll-Free
-            <a href="tel:+18009284272">800-928-4272</a> |
-            Fax
-            <a href="tel:+15023676800">502-367-6800</a>
-        </div>
-        <p>This office is open year-round, Monday - Friday from 8:30am to 4:00pm</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_donations">
-            <input type="hidden" name="business" value="kentuckyhbpa@gmail.com">
-            <input type="hidden" name="lc" value="US">
-            <input type="hidden" name="item_name" value="KY HBPA">
-            <input type="hidden" name="no_note" value="0">
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-        </form>
+                <a target="_blank" href="https://goo.gl/maps/xBqGKXK2fju">
+                    Kentucky HBPA |
+                    3729 S. Fourth St. |
+                    Louisville, KY 40214-1712
+                </a>
+                <br />
+                Email
+                <a href="mailto:Kentuckyhbpa@gmail.com">Kentuckyhbpa@gmail.com</a> |
+                Phone
+                <a href="tel:+15023631077">502-363-1077</a> |
+                Toll-Free
+                <a href="tel:+18009284272">800-928-4272</a> |
+                Fax
+                <a href="tel:+15023676800">502-367-6800</a>
+            </div>
+            <p>This office is open year-round, Monday - Friday from 8:30am to 4:00pm</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_donations">
+                <input type="hidden" name="business" value="kentuckyhbpa@gmail.com">
+                <input type="hidden" name="lc" value="US">
+                <input type="hidden" name="item_name" value="KY HBPA">
+                <input type="hidden" name="no_note" value="0">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
 
-        @*<a href="https://www.facebook.com/KYhbpa/" class="btn btn-social-icon btn-facebook" target="_blank">
-                <span class="fa fa-facebook-o">
-                </span>
-            </a>
+            @*<a href="https://www.facebook.com/KYhbpa/" class="btn btn-social-icon btn-facebook" target="_blank">
+                    <span class="fa fa-facebook-o">
+                    </span>
+                </a>
 
-            <a href="https://twitter.com/kyhbpa" class="btn btn-social-icon btn-twitter" target="_blank">
-                <i class="fa fa-twitter"></i>
-            </a>*@
+                <a href="https://twitter.com/kyhbpa" class="btn btn-social-icon btn-twitter" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>*@
 
-        <p>&copy; @DateTime.Now.Year - KHBPA</p>
-    </footer>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-    <!--CTRL+K+D atuto styles indentation and code styling-->
+            <p>&copy; @DateTime.Now.Year - KHBPA</p>
+ </footer>
+
 </body>
 </html>
