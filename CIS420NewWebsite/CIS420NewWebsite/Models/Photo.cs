@@ -7,7 +7,7 @@ namespace CIS420NewWebsite.Models
 {
     public class Photo
     {
-        public string ID { get; set; }
+        public int ID { get; set; }
         public string PhotoName { get; set; }
         public string Description { get; set; }
         public byte[] Content { get; set; }

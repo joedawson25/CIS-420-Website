@@ -20,6 +20,13 @@ namespace CIS420NewWebsite.Controllers
         // GET: Photos
         public ActionResult Index()
         {
+            var photoList = db.Photos.Select(x => new PhotoUploadViewModel
+            {
+                ID = x.ID,
+                PhotoName = x.PhotoName,
+                Description = x.Description,
+                ImageData = new MemoryPostedFile(x.Content, x.PhotoName) // from tyler
+            });
             return View(db.Photos.ToList());
         }
 
@@ -44,11 +51,27 @@ namespace CIS420NewWebsite.Controllers
             return View();
         }
 
+        #region ImageParsing
+        public byte[] ImagetoByteArray(string path)
+        {
+            Image image = Image.FromFile(path);
+            MemoryStream ms = new MemoryStream();
+            image.Save(ms, image.RawFormat);
+            return ms.ToArray();
+        }
+
+        public Image ByteArraytoImage(byte[] imageByteArray)
+        {
+            return Image.FromStream(new MemoryStream(imageByteArray));
+        }
+        #endregion  
+
         // POST: Photos/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //public async Task<ActionResult> Create(PhotoUploadViewModel photoUpload)
         public async Task<ActionResult> Create(PhotoUploadViewModel photoUpload)
         {
             byte[] imageContent = null;
@@ -59,6 +82,10 @@ namespace CIS420NewWebsite.Controllers
             else if ((imageContent = ToByteArray(photoUpload.ImageData.InputStream)) == null)
             {
                 ModelState.AddModelError("ImageData", "The file you uploaded is not an acceptable type of image.");
+            }
+            else
+            {
+                imageContent = ImagetoByteArray(photoUpload.ImageData.FileName);
             }
 
             if (ModelState.IsValid)
