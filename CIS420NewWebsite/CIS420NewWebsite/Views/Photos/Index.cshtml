@@ -18,10 +18,10 @@
             @Html.DisplayNameFor(model => model.Description)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ContentLength)
+            @Html.DisplayNameFor(model => model.File.ContentLength)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ContentType)
+            @Html.DisplayNameFor(model => model.File.ContentType)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.DateUploaded)
@@ -38,10 +38,10 @@
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ContentLength)
+            @Html.DisplayFor(modelItem => item.File.ContentLength)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ContentType)
+            @Html.DisplayFor(modelItem => item.File.ContentType)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.DateUploaded)
