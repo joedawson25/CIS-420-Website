@@ -24,11 +24,11 @@
 
     scheduler.config.xml_date = "%m/%d/%y %H:%i";
     scheduler.init('scheduler_here', new Date(), "month");
-    scheduler.load("/Event/Data", "json");  //path to the newly created action
+    scheduler.load("/Events/Data", "json");  //path to the newly created action
     scheduler.config.full_day = true;
 
 
-    scheduler.attachEvent("onAfterLightbox", function () {
+    scheduler.attachEvents("onAfterLightbox", function () {
         textofEventLastModified = $('textarea').val();
         var currentEvents = scheduler.getEvents();
         //var ev = currentEvents[currentEvents.length - 1];
@@ -43,7 +43,7 @@
         var props = { "id": obj.id, "text": obj.text , "start_date": obj.start_date, "end_date": obj.end_date};
 
         $.ajax({
-            url: "/Event/Save",
+            url: "/Events/Save",
             contentType: "application/json",
             async: true,
             type: "POST",
@@ -73,7 +73,7 @@
         var props = { "id": obj.id, "text": obj.text, "start_date": obj.start_date, "end_date": obj.end_date };
 
         $.ajax({
-            url: "/Event/Delete",
+            url: "/Events/Delete",
             contentType: "application/json",
             async: true,
             type: "POST",
