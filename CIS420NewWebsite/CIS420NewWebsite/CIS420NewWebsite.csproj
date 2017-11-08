@@ -271,6 +271,10 @@
     <Compile Include="Migrations\201710301855054_103017.Designer.cs">
       <DependentUpon>201710301855054_103017.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711061721039_11617.cs" />
+    <Compile Include="Migrations\201711061721039_11617.Designer.cs">
+      <DependentUpon>201711061721039_11617.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -305,6 +309,7 @@
     <Content Include="Content\Images\horses4.jpg" />
     <Content Include="Content\Images\horse_racing-17.jpg" />
     <Content Include="Content\Images\Human Icon.png" />
+    <Content Include="Content\Images\improved-home-button.png" />
     <Content Include="Content\Images\keeneland-logo.png" />
     <Content Include="Content\Images\Kentucky Derby 2.jpg" />
     <Content Include="Content\Images\kentuckyderby-hero7.jpg" />
@@ -323,6 +328,10 @@
     <Content Include="Content\Images\racinglittleslideshow2.jpg" />
     <Content Include="Content\Images\racinglittleslideshow3.jpg" />
     <Content Include="Content\Images\taalogo.png" />
+    <Content Include="Content\Images\tablepic1.jpg" />
+    <Content Include="Content\Images\tablepic2.jpg" />
+    <Content Include="Content\Images\tablepic3.jpg" />
+    <Content Include="Content\Images\tablepic4.jpg" />
     <Content Include="Content\Images\turfway_park.png" />
     <Content Include="Content\Images\white logo.png" />
     <Content Include="favicon.ico" />
@@ -656,6 +665,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710301855054_103017.resx">
       <DependentUpon>201710301855054_103017.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711061721039_11617.resx">
+      <DependentUpon>201711061721039_11617.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
