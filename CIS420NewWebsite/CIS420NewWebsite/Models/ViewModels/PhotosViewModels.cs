@@ -21,7 +21,8 @@ namespace CIS420NewWebsite.Models
         [Display(Name = "Description")]
         public string Description { get; set; }
 
-
+        public DateTime DateUploaded { get; set; }
+        public MemoryPostedFile File { get; set; }
 
         [DataType(DataType.Upload)]
         public HttpPostedFileBase ImageData { get; set; }
