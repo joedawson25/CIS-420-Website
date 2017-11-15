@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using System.Xml.Linq;
+using CIS420NewWebsite.Code;
 
 namespace CIS420NewWebsite.Controllers
 {
@@ -89,6 +90,29 @@ namespace CIS420NewWebsite.Controllers
         public ActionResult BoardOfDirectors()
         {
             return View();
+        }
+        public ActionResult Gallery(int id)
+        {
+            // Default.
+            string folder = "~/Content/Images/";
+
+            switch (id)
+            {
+                case 0:
+                    folder = "~/Content/Images/";
+                    break;
+                case 1:
+                    folder = "~/photos/cameras/";
+                    break;
+                case 2:
+                    folder = "~/photos/cars/";
+                    break;
+                case 3:
+                    folder = "~/photos/ships/";
+                    break;
+            }
+
+            return View(new PhotoModel(folder));
         }
     }
 }

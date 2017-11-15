@@ -3335,6 +3335,9 @@ input[type="search"] {
 
 .form-group {
     margin-bottom: 15px;
+    align-content:center;
+    justify-content:center;
+    align-items:center;
 }
 
 .radio,

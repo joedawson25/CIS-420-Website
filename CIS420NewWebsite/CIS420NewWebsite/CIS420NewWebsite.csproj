@@ -191,6 +191,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Code\PhotoModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdministratorController.cs" />
     <Compile Include="Controllers\DonorController.cs" />
@@ -199,6 +200,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MemberController.cs" />
     <Compile Include="Controllers\PhotosController.cs" />
+    <Compile Include="Controllers\UploadPhotoController.cs" />
     <Compile Include="Controllers\UserManagementController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -279,6 +281,10 @@
     <Compile Include="Migrations\201711082037415_photos.Designer.cs">
       <DependentUpon>201711082037415_photos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711131925451_111317.cs" />
+    <Compile Include="Migrations\201711131925451_111317.Designer.cs">
+      <DependentUpon>201711131925451_111317.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -292,6 +298,7 @@
     <Compile Include="Mapping\MemberMapping.cs" />
     <Compile Include="Models\Member.cs" />
     <Compile Include="Models\Photo.cs" />
+    <Compile Include="Models\PhotoGallery.cs" />
     <Compile Include="Models\ViewModels\EditUserViewModel.cs" />
     <Compile Include="Models\ViewModels\PhotosViewModels.cs" />
     <Compile Include="Models\ViewModels\SelectRoleEditorViewModel.cs" />
@@ -338,6 +345,8 @@
     <Content Include="Content\Images\tablepic4.jpg" />
     <Content Include="Content\Images\turfway_park.png" />
     <Content Include="Content\Images\white logo.png" />
+    <Content Include="Content\photos.css" />
+    <Content Include="Content\Photo Gallery Photos\tablepic2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -528,6 +537,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_photos.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -600,6 +610,8 @@
     <Content Include="Views\Home\Localnews.cshtml" />
     <Content Include="Views\Home\Donate.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Gallery.cshtml" />
+    <Content Include="Views\UploadPhoto\UploadFile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -675,6 +687,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711082037415_photos.resx">
       <DependentUpon>201711082037415_photos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711131925451_111317.resx">
+      <DependentUpon>201711131925451_111317.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
