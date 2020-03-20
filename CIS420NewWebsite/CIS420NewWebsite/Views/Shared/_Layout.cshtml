@@ -42,15 +42,21 @@
                             <li>@Html.ActionLink("Upload Photos", "UploadFile", "UploadPhoto")</li>
                         </ul>
                     </li>
-
+@{if (Context.User.Identity.IsAuthenticated)
+    {
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Member<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Documents", "Documents", "Home")</li>
-                            <li>@Html.ActionLink("User Management", "Index", "UserManagement")</li>
+                            <li><a href="https://drive.google.com/drive/folders/1o4dhwtn_-ZoDsvVxOhSu_0Ya9Edp5ROi?usp=sharing">Documents</a></li>
+                            @{if (Context.User.IsInRole("SuperAdmin"))
+                                {
+                            <li>@Html.ActionLink("Member Management", "Index", "UserManagement")</li>
+                                    }
+                                }
                         </ul>
                     </li>
-
+        }
+    }
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
                         <ul class="dropdown-menu">
